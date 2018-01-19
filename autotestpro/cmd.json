@@ -1,0 +1,8 @@
+{
+    "jsonpath": "/mnt/sdcard/test.json",
+    "startcmd": "adb -d shell am start --es cf /mnt/sdcard/test.json com.yourpackage.com/.LoadActivity",
+    "meminfocmd": "adb -d shell dumpsys meminfo com.yourpackage.com",
+    "cpuinfocmd": "adb shell dumpsys cpuinfo | find",
+    "tempinfocmd": "adb -d shell dumpsys battery",
+    "time": 16
+}
